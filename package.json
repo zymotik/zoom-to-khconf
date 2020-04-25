@@ -1,0 +1,35 @@
+{
+  "name": "zoom-to-khconf",
+  "version": "1.0.0",
+  "description": "Merge Zoom meeting with KHConf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc index.ts && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zymotik/zoom-to-khconf.git"
+  },
+  "keywords": [
+    "node",
+    "khconf",
+    "zoom",
+    "merge",
+    "conference",
+    "call"
+  ],
+  "author": "Ian Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zymotik/zoom-to-khconf/issues"
+  },
+  "homepage": "https://github.com/zymotik/zoom-to-khconf#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "twilio": "^3.42.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
