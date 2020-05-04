@@ -20,7 +20,7 @@ client.calls.create({
     to: process.env.KHCONF_SIP,
     from: process.env.TWILIO_FROM_NUMBER,
     twiml: response.toString(),
-}).then((message) => console.log(message.sid), (error) => { console.log(error); });
+}).then((message) => console.log(`Started call id: ${message.sid}`), (error) => { console.log(error); });
 
 
 function getCallLength(): number {
