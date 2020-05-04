@@ -3,6 +3,8 @@ This is a proof-of-concept/spike into a tool to rebroadcast Zoom meeting audio t
 
 Cost is approx 1p per minute for call to Zoom, 0.2p for a call to KHConf when using SIP.
 
+This script could be used in a serverless environment such as [AWS](https://aws.amazon.com/). With a Lambda on a cron trigger, the connection could be scheduled to coincide with meeting start times. I have used environment variables to make this easier for different meeting numbers and timings.
+
 ## Improvements that could be made
 
 Making a call to Zoom first would likely make more sense. When the meeting ends, it should then end the call to KHConf.
